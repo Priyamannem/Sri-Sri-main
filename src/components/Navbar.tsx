@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -14,6 +15,7 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Helper to determine if we should use Link or a tag
+  const isInternal = (href: string) => href.startsWith("/") && !href.endsWith(".pdf");
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
@@ -31,26 +36,38 @@ const Navbar = () => {
         }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6">
-        <a
-          href="/"
+        <Link
+          to="/"
           className={`font-serif text-2xl font-bold transition-colors duration-500 ${isScrolled ? "text-primary" : "text-cream"
             }`}
         >
           Sri Sri Arcades
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={`text-[13px] font-sans font-black uppercase tracking-[0.2em] transition-all duration-500 hover:text-primary relative group ${isScrolled ? "text-foreground" : "text-cream"
-                }`}
-            >
-              {link.label}
-              <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full`} />
-            </a>
+            isInternal(link.href) ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                className={`text-[13px] font-sans font-black uppercase tracking-[0.2em] transition-all duration-500 hover:text-primary relative group ${isScrolled ? "text-foreground" : "text-cream"
+                  }`}
+              >
+                {link.label}
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full`} />
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`text-[13px] font-sans font-black uppercase tracking-[0.2em] transition-all duration-500 hover:text-primary relative group ${isScrolled ? "text-foreground" : "text-cream"
+                  }`}
+              >
+                {link.label}
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full`} />
+              </a>
+            )
           ))}
           <Button
             asChild

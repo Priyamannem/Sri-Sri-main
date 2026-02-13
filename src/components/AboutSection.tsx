@@ -71,15 +71,15 @@ const AboutSection = () => {
                 alt="Yadadri Temple"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-warm-dark/60 via-transparent to-transparent z-10" />
-              <div className="absolute inset-0 flex flex-col items-center justify-end p-12 text-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-warm-dark/80 via-transparent to-transparent z-10" />
+              <div className="absolute inset-0 flex flex-col items-center justify-end p-12 pb-28 text-center z-20">
                 <h4 className="font-serif text-cream text-3xl font-bold mb-2 italic">Sri Lakshmi Narasimha Swamy</h4>
                 <p className="text-gold text-sm font-sans uppercase tracking-[0.3em] font-bold">Yadadri Spiritual Hub</p>
               </div>
             </div>
-            <div className="absolute -bottom-8 -left-8 bg-secondary p-8 rounded-[2rem] shadow-2xl hidden md:block group hover:bg-primary transition-all duration-500 border border-white/10">
+            <div className="absolute -bottom-8 -left-8 bg-primary p-8 rounded-[2rem] shadow-2xl hidden md:block border border-white/10 z-30">
               <p className="text-cream text-4xl font-serif font-black mb-1">2.5km</p>
-              <p className="text-gold text-xs uppercase tracking-widest font-sans font-black leading-none text-center">To Temple</p>
+              <p className="text-cream/90 text-xs uppercase tracking-widest font-sans font-black leading-none text-center">To Temple</p>
             </div>
           </motion.div>
         </div>
