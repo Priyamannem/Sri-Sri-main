@@ -1,4 +1,4 @@
-import { Download, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroSec from "@/assets/hero-sec.jpeg";
 import { motion } from "framer-motion";
@@ -36,9 +36,8 @@ const HeroSection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild size="lg" className="gap-2 text-base px-8 py-6 rounded-full shadow-lg">
-            <a href="/Sreepuram-Villas-Brochure.pdf" download>
-              <Download className="w-5 h-5" />
-              Download Brochure
+            <a href="#contact" >
+              Book Site Visit
             </a>
           </Button>
           <Button
