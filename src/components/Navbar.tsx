@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 
@@ -76,9 +76,9 @@ const Navbar = () => {
               : "bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white text-cream hover:text-primary"
               }`}
           >
-            <a href="/Sreepuram-Villas-Brochure.pdf" download className="gap-2">
-              <Download className="w-4 h-4" />
-              Brochure
+            <a href="#contact" className="gap-2">
+              <Calendar className="w-4 h-4" />
+              Book Site Visit
             </a>
           </Button>
         </div>
@@ -93,19 +93,30 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-card border-b border-border px-4 pb-4 space-y-3">
           {navLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="block text-sm font-medium text-foreground/80 hover:text-primary py-1"
-              onClick={() => setOpen(false)}
-            >
-              {l.label}
-            </a>
+            isInternal(l.href) ? (
+              <Link
+                key={l.label}
+                to={l.href}
+                className="block text-sm font-medium text-foreground/80 hover:text-primary py-1"
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ) : (
+              <a
+                key={l.href}
+                href={l.href}
+                className="block text-sm font-medium text-foreground/80 hover:text-primary py-1"
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </a>
+            )
           ))}
           <Button asChild size="sm" className="w-full gap-1.5">
-            <a href="/Sreepuram-Villas-Brochure.pdf" download>
-              <Download className="w-4 h-4" />
-              Download Brochure
+            <a href="#contact">
+              <Calendar className="w-4 h-4" />
+              Book Site Visit
             </a>
           </Button>
         </div>
