@@ -37,7 +37,7 @@ const HighlightsSection = () => {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-4xl mx-auto">
           {highlights.map((h, i) => (
             <motion.div
               key={h.title}
@@ -45,7 +45,7 @@ const HighlightsSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="group flex items-center gap-4 bg-slate-50/80 backdrop-blur-sm rounded-2xl p-6 border border-border/40 hover:bg-white hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              className="group flex items-center gap-4 bg-slate-50/80 backdrop-blur-sm rounded-2xl p-4 border border-border/40 hover:bg-white hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors duration-300">
                 <h.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />

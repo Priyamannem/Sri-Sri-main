@@ -93,13 +93,13 @@ const ContactSection = () => {
               <div className="bg-slate-50/80 backdrop-blur-sm p-6 rounded-3xl border border-border/40 hover:bg-white hover:shadow-xl transition-all duration-300">
                 <Phone className="w-6 h-6 text-primary mb-4" />
                 <h4 className="font-serif font-black text-secondary mb-2 uppercase tracking-tight">Call Center</h4>
-                <p className="font-sans text-sm font-bold text-foreground">+91 9849 016 082</p>
+                <p className="font-sans text-sm font-bold text-foreground">+91 0000000000</p>
                 <p className="font-sans text-sm text-muted-foreground">9 AM to 7 PM IST</p>
               </div>
               <div className="bg-slate-50/80 backdrop-blur-sm p-6 rounded-3xl border border-border/40 hover:bg-white hover:shadow-xl transition-all duration-300">
                 <Mail className="w-6 h-6 text-primary mb-4" />
                 <h4 className="font-serif font-black text-secondary mb-2 uppercase tracking-tight">Email Sales</h4>
-                <p className="font-sans text-sm font-bold text-foreground">info@sreepuramvillas.com</p>
+                <p className="font-sans text-sm font-bold text-foreground">dummy@srisri.in</p>
                 <p className="font-sans text-sm text-muted-foreground">Response within 2 hrs</p>
               </div>
             </div>

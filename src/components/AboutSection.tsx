@@ -31,27 +31,27 @@ const AboutSection = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
-              <div className="flex items-center gap-3 bg-white/60 p-4 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
+              <div className="flex items-center gap-3 bg-white/60 p-3 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
                 <span className="w-2 h-2 rounded-full bg-gold shrink-0 group-hover:scale-125 transition-transform" />
                 <span className="text-sm font-bold text-foreground">TLP.NO. 01/2021 YTDA</span>
               </div>
-              <div className="flex items-center gap-3 bg-white/60 p-4 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
+              <div className="flex items-center gap-3 bg-white/60 p-3 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
                 <span className="w-2 h-2 rounded-full bg-gold shrink-0 group-hover:scale-125 transition-transform" />
                 <span className="text-sm font-bold text-foreground">Just 5 mins drive to Temple</span>
               </div>
-              <div className="flex items-center gap-3 bg-white/60 p-4 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
+              <div className="flex items-center gap-3 bg-white/60 p-3 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
                 <span className="w-2 h-2 rounded-full bg-gold shrink-0 group-hover:scale-125 transition-transform" />
                 <span className="text-sm font-bold text-foreground">Pure pollution-free air</span>
               </div>
-              <div className="flex items-center gap-3 bg-white/60 p-4 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
+              <div className="flex items-center gap-3 bg-white/60 p-3 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
                 <BadgeCheck className="w-5 h-5 text-primary shrink-0 group-hover:text-gold transition-colors" />
                 <span className="text-sm font-bold text-foreground">YTDA Approved</span>
               </div>
-              <div className="flex items-center gap-3 bg-white/60 p-4 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
+              <div className="flex items-center gap-3 bg-white/60 p-3 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
                 <ShieldCheck className="w-5 h-5 text-primary shrink-0 group-hover:text-gold transition-colors" />
                 <span className="text-sm font-bold text-foreground">RERA Approved</span>
               </div>
-              <div className="flex items-center gap-3 bg-white/60 p-4 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
+              <div className="flex items-center gap-3 bg-white/60 p-3 rounded-2xl border border-primary/10 shadow-sm hover:shadow-lg transition-all hover:bg-white hover:border-primary/20 group">
                 <Landmark className="w-5 h-5 text-primary shrink-0 group-hover:text-gold transition-colors" />
                 <span className="text-sm font-bold text-foreground">Bank Loan Available</span>
               </div>
