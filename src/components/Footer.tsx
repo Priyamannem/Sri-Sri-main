@@ -31,13 +31,13 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-gold">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span>+91 9849 016 082</span>
+                <span>+91 0000000000</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-gold">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="break-all">info@sreepuramvillas.com</span>
+                <span className="break-all">[dummy@srisri.in]</span>
               </div>
             </div>
           </div>

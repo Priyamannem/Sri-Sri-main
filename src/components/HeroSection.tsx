@@ -11,6 +11,8 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center scale-105 animate-subtle-zoom"
         style={{ backgroundImage: `url(${heroSec})` }}
       />
+      {/* Dark Overlay for better text visibility */}
+      <div className="absolute inset-0 bg-black/50" />
       <div className="absolute inset-0 bg-gradient-to-tr from-warm-dark via-warm-dark/40 to-transparent opacity-80" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-warm-dark/90" />
 

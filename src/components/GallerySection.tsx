@@ -19,7 +19,7 @@ const GallerySection = () => {
   const [selected, setSelected] = useState<number | null>(null);
 
   return (
-    <section id="gallery" className="py-20 md:py-28 bg-slate-50/50 relative overflow-hidden">
+    <section id="gallery" className="py-12 md:py-20 bg-slate-50/50 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 via-transparent to-gold/5 pointer-events-none" />
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">

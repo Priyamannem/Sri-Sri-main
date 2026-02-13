@@ -6,7 +6,7 @@ import templeImg from "@/assets/temple.jpeg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-gradient-to-b from-background to-cream/30 overflow-hidden">
+    <section id="about" className="py-12 md:py-20 bg-gradient-to-b from-background to-cream/30 overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div

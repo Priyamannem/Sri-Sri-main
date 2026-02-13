@@ -16,7 +16,7 @@ const advantages = [
 
 const LocationSection = () => {
   return (
-    <section id="location" className="py-20 md:py-28 bg-card">
+    <section id="location" className="py-12 md:py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <p className="text-primary text-sm tracking-[0.2em] uppercase font-sans font-medium mb-3">
